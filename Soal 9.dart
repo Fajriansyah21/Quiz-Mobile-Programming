@@ -5,19 +5,13 @@ class Food {
   Food(this.nama, this.harga);
 
   void tampilkanInfo() {
-    print("Nama   : $nama");
-    print("Harga  : Rp$harga");
+    print("Nama  : $nama");
+    print("Harga : Rp$harga");
   }
 }
 
 class Drink extends Food {
   Drink(String nama, int harga) : super(nama, harga);
-
-  @override
-  void tampilkanInfo() {
-    print("Nama   : $nama");
-    print("Harga  : Rp$harga");
-  }
 }
 
 void main() {
@@ -27,6 +21,8 @@ void main() {
   print("=== DAFTAR PRODUK ===");
 
   makanan.tampilkanInfo();
+
   print("");
+
   minuman.tampilkanInfo();
 }
